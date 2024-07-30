@@ -1,0 +1,68 @@
+body{
+    background-color: aquamarine;
+}
+/*This is a multiline comment */
+h1{
+    color:brown;
+    border:1px solid;
+    text-align: center;
+
+}
+h2{
+    color:yellowgreen;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+  color:red;
+  text-shadow:3px 3px 5px green;
+}
+/*Attribute selector*/
+ input[type]{
+    border:2px solid orangered;
+}
+
+input[type="text"]{
+     background-color:palegreen;
+}
+input[type="email"]{
+    background-color:rgb(131, 96, 80);
+}
+input[type="button"]{
+    border:2px solid goldenrod;
+    background-color:palegreen;
+    color:white;
+    font-weight: bold;
+    cursor:pointer;
+}
+/*Attribute start with*/
+p[title^="I"]{
+    color:blue;
+}
+/*Attribute ends with*/
+p[title$="fox"]{
+    color:Red;
+}
+/*Attribute contains word*/
+p[title~="Dreamer"]{
+    text-decoration: underline;
+
+}
+/*Select multiple elements by separating them with a comma*/
+p,button{
+    /*color:red;*/
+}
+/* Select all inside  of descendant*/
+#outerDiv p {
+    color:blue;
+
+}
+#innerDiv >p {
+    color:green;
+}
+p + h3 {
+    color: blue;
+    text-decoration: underline;
+}
